@@ -1,8 +1,200 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Inicio";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<nav aria-label="breadcrumb" class="bg-white p-3 rounded shadow-sm mb-4">
+    <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item"><a href="#" class="text-decoration-none text-primary">NexusBoost</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Catálogo de Elos</li>
+    </ol>
+</nav>
+
+<div class="text-center p-5 mb-5 bg-primary text-white rounded shadow">
+    <h1 class="display-4 fw-bold">Domina la Grieta del Invocador</h1>
+    <p class="lead">Sube de división de forma rápida, segura y con los mejores Challengers de la región.</p>
+    <a href="#servicios" class="btn btn-warning btn-lg fw-bold mt-3">Ver Ofertas</a>
+</div>
+
+<div id="servicios">
+    <h2 class="text-center mb-4">Selecciona tu Rango Actual</h2>
+
+    <nav class="mb-4">
+        <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+            <button class="nav-link active fw-bold" id="nav-solo-tab" data-bs-toggle="tab" data-bs-target="#nav-solo" type="button" role="tab" aria-selected="true">Solo/Duo Queue</button>
+            <button class="nav-link fw-bold" id="nav-flex-tab" data-bs-toggle="tab" data-bs-target="#nav-flex" type="button" role="tab" aria-selected="false">Flex Queue</button>
+            <button class="nav-link fw-bold" id="nav-placements-tab" data-bs-toggle="tab" data-bs-target="#nav-placements" type="button" role="tab" aria-selected="false">Placements</button>
+        </div>
+    </nav>
+
+    <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-solo" role="tabpanel" aria-labelledby="nav-solo-tab">
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0 text-center custom-card">
+                        <div class="card-body">
+                            <img src="~/img/iron.png" class="img-fluid w-50 mb-3" alt="Iron Elo">
+                            <h5 class="card-title fw-bold text-secondary">Iron</h5>
+                            <p class="card-text text-muted">Escapa del infierno de Iron. Resultados garantizados en 24h.</p>
+                            <h4 class="text-primary">$15 USD <small class="text-muted fs-6">/ División</small></h4>
+                            <button class="btn btn-outline-primary w-100 mt-2">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0 text-center custom-card">
+                        <div class="card-body">
+                            <img src="~/img/bronze.png" class="img-fluid w-50 mb-3" alt="Bronze Elo">
+                            <h5 class="card-title fw-bold" style="color: #cd7f32;">Bronze</h5>
+                            <p class="card-text text-muted">Deja atrás los trolls y AFKs. Sube a Plata fácilmente.</p>
+                            <h4 class="text-primary">$20 USD <small class="text-muted fs-6">/ División</small></h4>
+                            <button class="btn btn-outline-primary w-100 mt-2">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0 text-center custom-card">
+                        <div class="card-body">
+                            <img src="~/img/silver.png" class="img-fluid w-50 mb-3" alt="Silver Elo">
+                            <h5 class="card-title fw-bold text-secondary">Silver</h5>
+                            <p class="card-text text-muted">El elo más poblado. Destaca del resto hoy mismo.</p>
+                            <h4 class="text-primary">$30 USD <small class="text-muted fs-6">/ División</small></h4>
+                            <button class="btn btn-outline-primary w-100 mt-2">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0 text-center custom-card">
+                        <div class="card-body">
+                            <img src="~/img/gold.png" class="img-fluid w-50 mb-3" alt="Gold Elo">
+                            <h5 class="card-title fw-bold text-warning">Gold</h5>
+                            <p class="card-text text-muted">Asegura tu skin victoriosa de esta temporada.</p>
+                            <h4 class="text-primary">$45 USD <small class="text-muted fs-6">/ División</small></h4>
+                            <button class="btn btn-outline-primary w-100 mt-2">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0 text-center custom-card">
+                        <div class="card-body">
+                            <img src="~/img/platinum.png" class="img-fluid w-50 mb-3" alt="Platinum Elo">
+                            <h5 class="card-title fw-bold" style="color: #00ced1;">Platinum</h5>
+                            <p class="card-text text-muted">El nivel se pone serio. Déjalo en manos de expertos.</p>
+                            <h4 class="text-primary">$65 USD <small class="text-muted fs-6">/ División</small></h4>
+                            <button class="btn btn-outline-primary w-100 mt-2">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0 text-center custom-card">
+                        <div class="card-body">
+                            <img src="~/img/diamond.png" class="img-fluid w-50 mb-3" alt="Diamond Elo">
+                            <h5 class="card-title fw-bold text-info">Diamond</h5>
+                            <p class="card-text text-muted">Entra al top de jugadores de tu servidor.</p>
+                            <h4 class="text-primary">$100 USD <small class="text-muted fs-6">/ División</small></h4>
+                            <button class="btn btn-outline-primary w-100 mt-2">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0 text-center custom-card border-danger border-2">
+                        <div class="card-body">
+                            <img src="~/img/master.png" class="img-fluid w-50 mb-3" alt="Master Elo">
+                            <h5 class="card-title fw-bold text-danger">Master</h5>
+                            <p class="card-text text-muted">Servicio VIP. Precios por LP ganado.</p>
+                            <h4 class="text-primary text-danger">Cotizar</h4>
+                            <button class="btn btn-danger w-100 mt-2">Contactar al Soporte</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0 text-center custom-card border-danger border-2">
+                        <div class="card-body">
+                            <img src="~/img/grandmaster.png" class="img-fluid w-50 mb-3" alt="Grandmaster Elo">
+                            <h5 class="card-title fw-bold text-danger">Grandmaster</h5>
+                            <p class="card-text text-muted">Juega con la élite y streamers profesionales.</p>
+                            <h4 class="text-primary text-danger">Cotizar</h4>
+                            <button class="btn btn-danger w-100 mt-2">Contactar al Soporte</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow border-0 text-center bg-dark text-white custom-card border-warning border-3">
+                        <div class="card-body">
+                            <img src="~/img/challenger.png" class="img-fluid w-50 mb-3" alt="Challenger Elo">
+                            <h5 class="card-title fw-bold text-warning">Challenger</h5>
+                            <p class="card-text">Conviértete en una leyenda viva de la Grieta.</p>
+                            <h4 class="text-warning">Servicio Premium</h4>
+                            <button class="btn btn-warning w-100 mt-2 fw-bold">Consulta Privada</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="tab-pane fade p-5 text-center bg-white rounded shadow mt-3" id="nav-flex" role="tabpanel" aria-labelledby="nav-flex-tab">
+            <h3>Tarifas de Flex Queue</h3>
+            <p>Juega en equipo con nuestros boosters. Mismos precios con 15% de descuento.</p>
+        </div>
+        <div class="tab-pane fade p-5 text-center bg-white rounded shadow mt-3" id="nav-placements" role="tabpanel" aria-labelledby="nav-placements-tab">
+            <h3>Partidas de Posicionamiento</h3>
+            <p>Aseguramos un Winrate del 80% al 100% en tus primeras 5 partidas.</p>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center mt-5 mb-5" id="contacto">
+    <div class="col-md-8">
+        <div class="card shadow border-0">
+            <div class="card-header bg-dark">
+                <nav class="nav nav-pills nav-fill">
+                    <a class="nav-link active bg-primary text-white fw-bold" aria-current="page" href="#contacto">✉️ Formulario de Contacto</a>
+                    <a class="nav-link text-light" href="#">💬 Discord</a>
+                    <a class="nav-link text-light" href="#">❓ Preguntas Frecuentes</a>
+                </nav>
+            </div>
+
+            <div class="card-body p-5 bg-light">
+                <h3 class="card-title text-center mb-4">¿Tienes dudas o peticiones especiales?</h3>
+                <p class="text-center text-muted mb-4">Llena el siguiente formulario y un Challenger de nuestro equipo se pondrá en contacto contigo a la brevedad posible.</p>
+
+                <form onsubmit="event.preventDefault(); alert('¡Mensaje enviado (Simulación)!');">
+                    <div class="mb-3">
+                        <label for="summonerName" class="form-label fw-bold">Nombre de Invocador y Región</label>
+                        <input type="text" class="form-control" id="summonerName" placeholder="Ej. Faker#LAN">
+                    </div>
+                    <div class="mb-3">
+                        <label for="emailInput" class="form-label fw-bold">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="emailInput" placeholder="tu_correo@ejemplo.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="servicioSelect" class="form-label fw-bold">Tipo de Servicio de Interés</label>
+                        <select class="form-select" id="servicioSelect">
+                            <option selected>Elige una opción...</option>
+                            <option value="1">Subida de División (Solo/Duo)</option>
+                            <option value="2">Mantenimiento de Elo</option>
+                            <option value="3">Coaching (Clases privadas)</option>
+                            <option value="4">Otro</option>
+                        </select>
+                    </div>
+                    <div class="mb-4">
+                        <label for="mensajeText" class="form-label fw-bold">Detalles de tu solicitud</label>
+                        <textarea class="form-control" id="mensajeText" rows="4" placeholder="Cuéntanos en qué podemos ayudarte..."></textarea>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary btn-lg fw-bold">Enviar Mensaje</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </div>
